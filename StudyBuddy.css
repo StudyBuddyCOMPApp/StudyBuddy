@@ -1,1 +1,57 @@
+body {
+    height: 100%;
+}
+
+html {
+    background: url(oldwell.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    width: 90%;
+    height: 100px;
+    font-family: Helvetica;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(151,192,230, .9);
+}
+
+#title {
+    color: white;
+    opacity: 1;
+}
+
+.toolbar {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav {
+    width: 30%;
+    height: 25px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+    font-family: Helvetica;
+    background-color: rgba(151,192,230, .9);
+    color: white;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.nav:hover {
+    background-color: rgba(118,118,118, .9);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
 
