@@ -1,9 +1,10 @@
-<?php include('server.php') ?>
+<?php 
+include 'server2.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="StudyBuddy.css">
 </head>
 <body>
   <div class="header">
