@@ -1,6 +1,5 @@
 <?php 
 include 'server2.php'; 
-echo "We making it?";
 ?>
 <!DOCTYPE html>
 <html>
