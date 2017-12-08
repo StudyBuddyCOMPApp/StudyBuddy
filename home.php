@@ -1,3 +1,6 @@
+<?php 
+include 'server2.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
 						<a href="Profile.html"> My Profile</a>
 					</td>
 					<td class="nav">
-						<a href="AddClass.html"> Add Classes</a>
+						<a href="AddClass.php"> Add Classes</a>
 					</td>
 					<td class="nav">
 						<a href="FindBuddy.html">Find Buddy</a>
@@ -27,6 +30,11 @@
 					</td>
 				</tr>
 			</table>
+			<?php 
+			echo "LOOK AT ME NOW";
+			echo $_SESSION['email'];
+			echo "Student id: " . $_SESSION['id'];
+			?>
 		</div>
 		<div>
 			<!--Put page info here -->

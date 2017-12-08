@@ -7,39 +7,38 @@ include 'server2.php' ?>
   <link rel="stylesheet" type="text/css" href="StudyBuddy.css">
 </head>
 <body>
-  <div class="header">
-  	<h2>Register</h2>
-  </div>
+  
 	
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
-  	<div class="input-group">
-  	  <label>First Name</label>
-  	  <input type="text" name="firstName" value="<?php echo $firstName; ?>">
+  	<div class = "login-block" id= "Register">
+    <h1> Register with Study Buddy! </h1>
+    <div class="input-group">
+  	  <input type="text" name="firstName" placeholder="First Name" value="<?php echo $firstName; ?>">
   	</div>
 		<div class="input-group">
-  	  <label>Last Name</label>
-  	  <input type="text" name="lastName" value="<?php echo $lastName; ?>">
+  	  
+  	  <input type="text" name="lastName" placeholder="Last Name" value="<?php echo $lastName; ?>">
   	</div>
   	<div class="input-group">
-  	  <label>Email</label>
-  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	
+  	  <input type="email" name="email"  placeholder= "Email" value="<?php echo $email; ?>">
   	</div>
 		<div class="input-group">
-  	  <label>Major</label>
-  	  <input type="text" name="major" value="<?php echo $major; ?>">
+  	  
+  	  <input type="text" name="major" placeholder="Major" value="<?php echo $major; ?>">
   	</div>
 		<div class="input-group">
-  	  <label>Year</label>
-  	  <input type="text" name="year" value="<?php echo $year; ?>">
+  	 
+  	  <input type="text" name="year" placeholder= "Year" value="<?php echo $year; ?>">
   	</div>
   	<div class="input-group">
-  	  <label>Password</label>
-  	  <input type="password" name="password_1">
+  	  
+  	  <input type="password"  placeholder = "Password" name="password_1">
   	</div>
   	<div class="input-group">
-  	  <label>Confirm password</label>
-  	  <input type="password" name="password_2">
+  	  
+  	  <input type="password" placeholder="Confirm Password" name="password_2">
   	</div>
   	<div class="input-group">
   	  <button type="submit" class="btn" name="reg_user">Register</button>
@@ -48,5 +47,6 @@ include 'server2.php' ?>
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
   </form>
+  </div>
 </body>
 </html>

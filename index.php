@@ -8,6 +8,7 @@
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['email']);
+    unset($_SESSION['id']);
   	header("location: login.php");
   }
 ?>
@@ -36,7 +37,17 @@
   	<?php endif ?>
 
     <!-- logged in user information -->
-    <?php  if (isset($_SESSION['email'])) : ?>
+    <?php  if (isset($_SESSION['email'])) : 
+      if(isset($_SESSION['id'])){
+
+
+      header("location: home.php");
+    }
+    ?>
+
+      <!--NEED TO DIRECT TO HOME PAGE-->
+
+
     	<p>Welcome <strong><?php echo $_SESSION['email']; ?></strong></p>
     	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
         <div>
