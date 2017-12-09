@@ -33,32 +33,41 @@ include 'server2.php' ?>
 			</table>
 		</div>
 		<form method = "post" action="AddClass.php">
-		<div class = "class-block">
-			<table class="classes">
-				<tr>
-					<td> Department </td>
-					<td> Class ID </td>
-					<td> Professor's Last Name </td>
-				</tr>
-				<tr> 
-					<td><input type="text" name="class1_dp" placeholder= "BIOL" value= "<?php echo $class1_dp; ?>" ></td>
-					<td> <input type="text" name="class1_id" placeholder= "101" value="<?php echo $class1_id; ?>" ></td>
-					<td><input type="text" name="class1_prof" placeholder= "Evans" value= "<?php echo $class1_prof; ?>" ></td>
-				</tr>
-				<tr> 
-					<td><input type="text" name="class2_dp" placeholder= "BIOL" value= "<?php echo $class2_dp; ?>" ></td>
-					<td> <input type="text" name="class2_id" placeholder= "101" value="<?php echo $class2_id; ?>" ></td>
-					<td><input type="text" name="class2_prof" placeholder= "Evans" value= "<?php echo $class2_prof; ?>" ></td>
-				</tr>
-				<tr> 
-					<td><input type="text" name="class3_dp" placeholder= "BIOL" value= "<?php echo $class3_dp; ?>" ></td>
-					<td> <input type="text" name="class3_id" placeholder= "101" value="<?php echo $class3_id; ?>" ></td>
-					<td><input type="text" name="class3_prof" placeholder= "Evans" value= "<?php echo $class3_prof; ?>" ></td>
-				</tr>
+			
+			<table cellpadding="0" cellspacing="0" border="0">
+
+					<thead>
+						<tr>
+							<td> <h1>Department </h1> </td>
+							<td><h1> Class ID </h1> </td>
+							<td><h1> Professor's Last Name</h1> </td>
+						</tr>
+					</thead>
+
+				
+				
+					<tbody>
+						<tr> 
+							<td><input type="text" name="class1_dp" placeholder= "BIOL" value= "<?php echo $class1_dp; ?>" ></td>
+							<td> <input type="text" name="class1_id" placeholder= "101" value="<?php echo $class1_id; ?>" ></td>
+							<td><input type="text" name="class1_prof" placeholder= "Evans" value= "<?php echo $class1_prof; ?>" ></td>
+						</tr>
+						<tr> 
+							<td><input type="text" name="class2_dp" placeholder= "BIOL" value= "<?php echo $class2_dp; ?>" ></td>
+							<td> <input type="text" name="class2_id" placeholder= "101" value="<?php echo $class2_id; ?>" ></td>
+							<td><input type="text" name="class2_prof" placeholder= "Evans" value= "<?php echo $class2_prof; ?>" ></td>
+						</tr>
+						<tr> 
+							<td><input type="text" name="class3_dp" placeholder= "BIOL" value= "<?php echo $class3_dp; ?>" ></td>
+							<td> <input type="text" name="class3_id" placeholder= "101" value="<?php echo $class3_id; ?>" ></td>
+							<td><input type="text" name="class3_prof" placeholder= "Evans" value= "<?php echo $class3_prof; ?>" ></td>
+						</tr>
+					</tbody>
+			
 			</table>
-			<button type="submit" class="btn" name="add_classes">Add Classes!</button>
+			<button type="submit" class="add" name="add_classes">Add Classes!</button>
 			<!--Put page info here -->
-		</div>
+
 		</form>
 	</div>
 </body>

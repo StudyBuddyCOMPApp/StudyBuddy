@@ -35,6 +35,8 @@ html {
     text-align: center;
 }
 
+
+
 .login-block {
     position:fixed;
     top: 26%;
@@ -60,7 +62,7 @@ html {
     margin-bottom: 20px;
 }
 
-.login-block input {
+input {
     width: 100%;
     height: 42px;
     box-sizing: border-box;
@@ -69,8 +71,9 @@ html {
     margin-bottom: 20px;
     font-size: 14px;
     font-family: "Trebuchet MS";
-    padding: 0 20px 0 50px;
+    text-align:center;
     outline: none;
+
 }
 
 
@@ -98,7 +101,7 @@ html {
     border: 1px solid #19BCFF;
 }
 
-.login-block button {
+button {
     width: 100%;
     height: 40px;
     background: #87cefa;
@@ -114,8 +117,16 @@ html {
     cursor: pointer;
 }
 
-.login-block button:hover {
+button:hover {
     background: #19BCFF;
+}
+button.add{
+    position:fixed;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    position: center;
+
 }
 
 .nav {
@@ -132,7 +143,7 @@ html {
 }
 
 .nav:hover {
-    background-color: rgba(118,118,118, .9);
+    background: #19BCFF;
 }
 
 p {
@@ -148,3 +159,33 @@ a {
     opacity: 1;
 }
 
+table{
+  width:100%;
+  table-layout: fixed;
+  background: #fff;
+  border-radius: 5px;
+  border-top: 5px solid #87cefa;
+  margin: 20px auto;
+  
+}
+
+
+th{
+  padding: 20px 15px;
+  margin: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: black;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
