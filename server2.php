@@ -194,7 +194,76 @@ if (isset($_POST['add_classes'])) {
   }
 
   
-     //header('location: home.php');
+  $duplicate = "SELECT * FROM Class WHERE dept = '$class4_dp' AND class_num= '$class4_id' AND professor = '$class4_prof'";
+  if($result = mysqli_query($db, $duplicate)){
+    if($result->num_rows == 0){
+      $query = "INSERT INTO Class (dept, class_num, professor) VALUES ('$class4_dp', '$class4_id', '$class4_prof')";
+      mysqli_query($db, $query);
+      $c4_id = $db->insert_id;
+    }else{
+      $row = mysqli_fetch_assoc($result);
+      $c4_id = $row["id"];
+    }
+  }
+  $student_id= $_SESSION['id'];
+  
+
+  $sql = "UPDATE users SET c4_id = '$c4_id' WHERE id = '$student_id'";
+
+  if ($db->query($sql) === TRUE) {
+    //echo "Record updated successfully";
+  } else {
+    //echo "Error updating record: " . $db->error;
+  }
+
+  $duplicate = "SELECT * FROM Class WHERE dept = '$class5_dp' AND class_num= '$class5_id' AND professor = '$class5_prof'";
+  if($result = mysqli_query($db, $duplicate)){
+    if($result->num_rows == 0){
+      $query = "INSERT INTO Class (dept, class_num, professor) VALUES ('$class5_dp', '$class5_id', '$class5_prof')";
+      mysqli_query($db, $query);
+      $c5_id = $db->insert_id;
+    }else{
+      $row = mysqli_fetch_assoc($result);
+      $c5_id = $row["id"];
+    }
+  }
+  $student_id= $_SESSION['id'];
+  
+
+  $sql = "UPDATE users SET c5_id = '$c5_id' WHERE id = '$student_id'";
+
+  if ($db->query($sql) === TRUE) {
+    //echo "Record updated successfully";
+  } else {
+    //echo "Error updating record: " . $db->error;
+  }
+
+  $duplicate = "SELECT * FROM Class WHERE dept = '$class6_dp' AND class_num= '$class6_id' AND professor = '$class6_prof'";
+  if($result = mysqli_query($db, $duplicate)){
+    if($result->num_rows == 0){
+      $query = "INSERT INTO Class (dept, class_num, professor) VALUES ('$class6_dp', '$class6_id', '$class6_prof')";
+      mysqli_query($db, $query);
+      $c6_id = $db->insert_id;
+    }else{
+      $row = mysqli_fetch_assoc($result);
+      $c6_id = $row["id"];
+    }
+  }
+  $student_id= $_SESSION['id'];
+  
+
+  $sql = "UPDATE users SET c6_id = '$c6_id' WHERE id = '$student_id'";
+
+  if ($db->query($sql) === TRUE) {
+    //echo "Record updated successfully";
+  } else {
+    //echo "Error updating record: " . $db->error;
+  }
+
+  
+     header('location: FindBuddy.php');
+
+
 
 
 
