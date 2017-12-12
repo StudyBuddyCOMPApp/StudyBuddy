@@ -1,7 +1,7 @@
 
 body {
     height: 100%;
-    overflow: scroll;
+    
 }
 
 html {
@@ -11,13 +11,13 @@ html {
     -o-background-size: cover;
     background-size: cover;
     filter: blur (3px);
-    overflow: scroll;
+    
 }
 
 .header {
     width: 90%;
     height: 100px;
-    font-family: Helvetica;
+    font-family: "Trebuchet MS";
     margin: 0 auto;
     text-align: center;
     padding-top: 10px;
@@ -121,26 +121,13 @@ button {
 button:hover {
     background: #19BCFF;
 }
+
 button.add{
-    position:fixed;
     left: 30%;
     width: 40%;
     height: 50px;
-    position: center;
-    width: 100%;
-    height: 40px;
-    background: #87cefa;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #19BCFF;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Trebuchet MS";
-    outline: none;
-    cursor: pointer;
-
+   float: center;
+    
 }
 
 .nav {
@@ -149,7 +136,7 @@ button.add{
     margin: 0 auto;
     text-align: center;
     vertical-align: center;
-    font-family: Helvetica;
+    font-family: "Trebuchet MS";
     background-color: rgba(151,192,230, .9);
     color: white;
     font-family: Helvetica;
@@ -202,4 +189,8 @@ td{
   font-size: 12px;
   color: black;
   border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+h1{
+	font-family: "Trebuchet MS";
 }
