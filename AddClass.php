@@ -72,7 +72,7 @@ include 'server2.php' ?>
 				</tr>
 			</table>
 			
-			<button type="submit" class="add" name="add_classes">Add Classes!</button>
+			<button type="submit" class = "add" name="add_classes"> Add Classes! </button>
 			
 		</div>
 		</form>

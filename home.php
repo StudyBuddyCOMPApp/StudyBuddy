@@ -17,13 +17,13 @@ include 'server2.php' ?>
 			<table class="toolbar">
 				<tr>
 					<td class="nav">
-						<a href="Profile.html"> My Profile</a>
+						<a href="Profile.php"> My Profile</a>
 					</td>
 					<td class="nav">
 						<a href="AddClass.php"> Add Classes</a>
 					</td>
 					<td class="nav">
-						<a href="FindBuddy.html">Find Buddy</a>
+						<a href="FindBuddy.php">Find Buddy</a>
 					</td>
 					<td class="nav">
 						<p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>
