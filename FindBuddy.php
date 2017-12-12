@@ -37,7 +37,22 @@ include 'server2.php' ?>
 			?>
 		</div>
 		<div>
-			<!--Put page info here -->
+			<table class= "classes">
+				<tr>
+					<td> 
+						Class 1
+						<ul> the list goes here </ul>
+					 </td>
+					<td> Class 2</td>
+					<td> Class 3 </td>
+					<td> Class 4 </td>
+					<td> Class 5 </td>
+					<td> Class 6 </td>
+				</tr>
+				
+			
+					
+						
 		</div>
 	</div>
 </body>
