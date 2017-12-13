@@ -34,7 +34,7 @@ include 'server2.php' ?>
 		</div>
 		<form method = "post" action="AddClass.php">
 		<div class = "class-block">
-			<table class="classes">
+			<table >
 				<tr>
 					<td> <h1>Department </h1></td>
 					<td><h1> Class ID</h1> </td>
@@ -65,11 +65,11 @@ include 'server2.php' ?>
 					<td> <input type="text" name="class5_id" placeholder= "101" value="<?php echo $class5_id; ?>" ></td>
 					<td><input type="text" name="class5_prof" placeholder= "Evans" value= "<?php echo $class5_prof; ?>" ></td>
 				</tr>
-				<tr> 
+				<!-- <tr> 
 					<td><input type="text" name="class6_dp" placeholder= "BIOL" value= "<?php echo $class6_dp; ?>" ></td>
 					<td> <input type="text" name="class6_id" placeholder= "101" value="<?php echo $class6_id; ?>" ></td>
 					<td><input type="text" name="class6_prof" placeholder= "Evans" value= "<?php echo $class6_prof; ?>" ></td>
-				</tr>
+				</tr> -->
 			</table>
 			
 			<button type="submit" class = "add" name="add_classes"> Add Classes! </button>

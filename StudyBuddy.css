@@ -54,7 +54,7 @@ html {
     left: 36%;
 }
 
-.login-block h1 {
+h1 {
     text-align: center;
     color: #000;
     font-size: 18px;
@@ -191,6 +191,13 @@ td{
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
 
-h1{
-	font-family: "Trebuchet MS";
+
+.classes{
+	width: 19%;
+	display: inline-block;
+	vertical-align: top;
+}
+h2{
+	font-family:"Trebuchet MS" ;
+	color: black;
 }
