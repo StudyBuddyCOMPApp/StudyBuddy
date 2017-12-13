@@ -30,11 +30,6 @@ include 'server2.php' ?>
 					</td>
 				</tr>
 			</table>
-			<?php 
-			echo "LOOK AT ME NOW";
-			echo $_SESSION['email'];
-			echo "Student id: " . $_SESSION['id'];
-			?>
 		</div>
 		<div>
 			<!--Put page info here -->
