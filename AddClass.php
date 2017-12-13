@@ -12,10 +12,24 @@ include 'server2.php' ?>
 <body>
 	<div class="background">
 		<div class="header">
-			<h1 id="title">Add Class</h1>
-		</div>
-		<div>
-			<table class="toolbar">
+			<div>
+			<img src = "logo.png" style="width:30%;height:60%;" alt = "LOGO">
+			</div>
+			<!-- <h1 id="title">Add Class</h1> -->
+		
+		<div class="cssmenu">
+			<ul>
+				<li> <a href ="Profile.php"> My Profile </a></li>
+				<li> <a href="AddClass.php"> Add Classes</a></li>
+				<li class ='active'> <a href="FindBuddy.php">Find Buddy</a></li>
+				<li> <a href="Resources.php">Study Resources</a></li>
+				<li> <a href="index.php?logout='1'" style="color: red;">Logout</a> </li>
+			</ul>
+
+
+
+
+			<!-- <table class="toolbar">
 				<tr>
 					<td class="nav">
 						<a href="Profile.php"> My Profile</a>
@@ -27,10 +41,14 @@ include 'server2.php' ?>
 						<a href="FindBuddy.php">Find Buddy</a>
 					</td>
 					<td class="nav">
+						<a href="Resources.php">Study Resources</a>
+					</td>
+					<td class="nav">
 						<p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>
 					</td>
 				</tr>
-			</table>
+			</table> -->
+		</div>
 		</div>
 		<form method = "post" action="AddClass.php">
 		<div class = "class-block">
@@ -71,9 +89,9 @@ include 'server2.php' ?>
 					<td><input type="text" name="class6_prof" placeholder= "Evans" value= "<?php echo $class6_prof; ?>" ></td>
 				</tr> -->
 			</table>
-			
+			<div class="add_button">
 			<button type="submit" class = "add" name="add_classes"> Add Classes! </button>
-			
+			</div>
 		</div>
 		</form>
 	</div>
