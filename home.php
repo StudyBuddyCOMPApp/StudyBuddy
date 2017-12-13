@@ -26,6 +26,9 @@ include 'server2.php' ?>
 						<a href="FindBuddy.php">Find Buddy</a>
 					</td>
 					<td class="nav">
+						<a href="Resources.php">Study Resources</a>
+					</td>
+					<td class="nav">
 						<p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>
 					</td>
 				</tr>

@@ -11,10 +11,20 @@ include 'server2.php' ?>
 <body>
 	<div class="background">
 		<div class="header">
-			<h1 id="title">Study Buddy</h1>
+			<div>
+			<img src = "logo.png" style="width:30%;height:60%;" alt = "LOGO">
+			<div>
 		</div>
 		<div>
-			<table class="toolbar">
+			<div class="cssmenu">
+				<ul>
+					<li class ='active'> <a href ="Profile.php"> My Profile </a></li>
+					<li > <a href="AddClass.php"> Add Classes</a></li>
+					<li > <a href="FindBuddy.php">Find Buddy</a></li>
+					<li> <a href="Resources.php">Study Resources</a></li>
+					<li> <a href="index.php?logout='1'" style="color: red;">Logout</a> </li>
+				</ul>
+			<!-- <table class="toolbar">
 				<tr>
 					<td class="nav">
 						<a href="Profile.php"> My Profile</a>
@@ -26,16 +36,37 @@ include 'server2.php' ?>
 						<a href="FindBuddy.php">Find Buddy</a>
 					</td>
 					<td class="nav">
+						<a href="Resources.php">Study Resources</a>
+					</td>
+					<td class="nav">
 						<p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>
 					</td>
 				</tr>
-			</table>
+			</table> -->
 			
 		</div>
+</div>
+
 		<div>
-			<!--Put page info here -->
+			<div class="profile">
+			<table>
+				<tr>
+					<td>
+						<h2>Full Name</h2>
+						<ul>
+							<li>Major:<li>
+							<li>Year:<li>
+						</ul>
+					</td>
+					<td>
+						<h2>My Schedule</h2>
+						<table>Classes go here</table>
+					</td>
+				</tr>
+			</table>
 		</div>
-	</div>
+		</div>
+	
 </body>
 </html>
 

@@ -1,0 +1,36 @@
+draft
+
+<div class= "classes">
+			<?php 
+
+			$sql = "SELECT * FROM Class WHERE id = '$class6'";
+			if($result1 = mysqli_query($db, $sql)){
+			}
+
+			if($class3 == NULL){
+				$message = "You are not registered for another class.";
+				echo "<table>"; 
+				echo "<tr><td>" . $message . "</td></tr>";
+
+			}else{
+				$query = "SELECT * FROM users WHERE (c1_id = '$class6' OR c2_id = '$class6' OR c3_id = '$class6' OR c4_id = '$class6' OR c5_id = '$class6' OR c6_id = '$class6') AND email != '$user_email'";
+
+				if($result = mysqli_query($db, $query)){
+					if($result->num_rows == 0){
+						$message = "Sorry! No students are registered for this class.";
+					}else{
+						$message = NULL;
+					}
+				}
+				echo "<table>"; // start a table tag in the HTML
+				$row1 = mysqli_fetch_array($result1);
+				echo "<tr> <td><h1>" . $row1['dept'] . " " . $row1['class_num'] . "</h1></td></tr>"; 
+
+				while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+					echo "<tr><td>" . $row['firstName'] . "\n" . $row['email'] . "</td></tr>";  
+				}
+				echo "<tr><td>" . $message . "</td></tr>";
+				echo "</table>";
+			} //Close the table in HTML
+			?>
+		</div>

@@ -41,7 +41,7 @@
       if(isset($_SESSION['id'])){
 
 
-      header("location: home.php");
+      header("location: Profile.php");
     }
     ?>
 
