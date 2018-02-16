@@ -15,39 +15,15 @@ include 'server2.php' ?>
 			<div>
 			<img src = "logo.png" style="width:30%;height:60%;" alt = "LOGO">
 			</div>
-			<!-- <h1 id="title">Add Class</h1> -->
 		
 		<div class="cssmenu">
 			<ul>
 				<li> <a href ="Profile.php"> My Profile </a></li>
-				<li> <a href="AddClass.php"> Add Classes</a></li>
-				<li class ='active'> <a href="FindBuddy.php">Find Buddy</a></li>
+				<li class ='active'> <a href="AddClass.php"> Add Classes</a></li>
+				<li> <a href="FindBuddy.php">Find Buddy</a></li>
 				<li> <a href="Resources.php">Study Resources</a></li>
 				<li> <a href="index.php?logout='1'" style="color: red;">Logout</a> </li>
 			</ul>
-
-
-
-
-			<!-- <table class="toolbar">
-				<tr>
-					<td class="nav">
-						<a href="Profile.php"> My Profile</a>
-					</td>
-					<td class="nav">
-						<a href="AddClass.php"> Add Classes</a>
-					</td>
-					<td class="nav">
-						<a href="FindBuddy.php">Find Buddy</a>
-					</td>
-					<td class="nav">
-						<a href="Resources.php">Study Resources</a>
-					</td>
-					<td class="nav">
-						<p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>
-					</td>
-				</tr>
-			</table> -->
 		</div>
 		</div>
 		<form method = "post" action="AddClass.php">

@@ -24,14 +24,6 @@ include 'server2.php';
     <div class="input-group">
       <button type="submit" class="btn" name="login_user">Login</button>
     </div>
-
-
-
-
-
-     <!-- <input type="text" value="" placeholder="Email" id="email" />
-     <input type="password" value="" placeholder="Password" id="password" />
-     <button type="submit" class="btn" name="login_user">Submit</button> -->
      <p>
       Not yet a member? <a href="register.php">Sign up</a>
     </p>
